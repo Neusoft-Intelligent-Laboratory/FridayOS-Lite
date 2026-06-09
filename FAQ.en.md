@@ -36,4 +36,9 @@
 
 **Claudian installed but won't connect to the AI?** In Claudian settings set **Provider = Claude** (Claude Code). This requires `claude --version` to work and cc-switch to already point at DeepSeek.
 
-**New computer — will I lose my brain?** No. Your brain is the folde
+**New computer — will I lose my brain?** No. Your brain is the folder — just copy it over and reinstall the apps.
+
+## Still stuck?
+Note the screenshot/error at the step you're on, and confirm every earlier step succeeded. Docs: DeepSeek 👉 https://api-docs.deepseek.com · cc-switch 👉 https://github.com/farion1231/cc-switch
+
+> Order matters: Node → Obsidian → DeepSeek key → Claude Code → cc-switch → Claudian. If a step fails, confirm the ones before it worked.

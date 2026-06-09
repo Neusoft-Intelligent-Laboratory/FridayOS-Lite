@@ -71,7 +71,7 @@ The full [FridayOS](https://github.com/Neusoft-Intelligent-Laboratory/FridayOS) 
 | Obsidian | The brain's body (notes app) | [obsidian.md](https://obsidian.md) |
 | Claude Code | Friday's engine (the AI) | npm (China mirror) |
 | cc-switch | Wires the engine to a cheap chip | [ccswitch.io](https://ccswitch.io) |
-| DeepSeek V4 | Cheap, no‑VPN model | [platform.deepseek.com](https://platform.deepseek.com) |
+| DeepSeek V4 | Cheap, no-VPN model | [platform.deepseek.com](https://platform.deepseek.com) |
 | Claudian | Brings the AI into Obsidian | Obsidian community plugin |
 
 ---

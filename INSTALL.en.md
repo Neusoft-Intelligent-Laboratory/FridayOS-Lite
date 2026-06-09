@@ -69,6 +69,12 @@ In the Claudian chat, say:
 If a new note appears in `inbox/`, 🎉 your AI second brain is live.
 
 ## 🆘 Stuck?
+
 | Symptom | Fix |
 |---|---|
-| `node -v` / `claude --version` does nothing | Reopen the te
+| `node -v` / `claude --version` does nothing | Reopen the terminal and retry |
+| `npm install` errors / very slow | Network/mirror hiccup — retry; see [`FAQ.en.md`](./FAQ.en.md) |
+| Friday won't reply / balance error | DeepSeek not topped up, or wrong key in cc-switch |
+| Can't find Claudian | Make sure community plugins are on and Obsidian ≥ 1.8.9 |
+
+More 👉 [`FAQ.en.md`](./FAQ.en.md) · [`下载清单.md`](./下载清单.md)
