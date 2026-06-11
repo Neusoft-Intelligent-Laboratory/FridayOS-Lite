@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./docs/images/hero.png" alt="FridayOS-Lite — an AI second brain for everyone" width="100%" />
+<img src="./docs/images/hero.gif" alt="FridayOS-Lite — your AI second brain, built by itself" width="100%" />
 
 # 🤖 FridayOS‑Lite
 

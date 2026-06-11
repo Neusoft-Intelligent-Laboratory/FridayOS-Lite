@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./docs/images/hero.png" alt="FridayOS-Lite — 技术小白也能拥有的 AI 第二大脑" width="100%" />
+<img src="./docs/images/hero.gif" alt="FridayOS-Lite — 会自己搭建的 AI 第二大脑" width="100%" />
 
 # 🤖 FridayOS‑Lite
 
