@@ -38,6 +38,9 @@ The note files themselves live **only on your computer** — no cloud account. T
 2. Tell it: "**Re-execute Blueprint Section 6 exactly.**"
 3. Still stuck? Use the Blueprint's manual fallback — six folders by hand plus one copy-paste, two minutes.
 
+**The build is missing pieces (no templates / skills / interview)?**
+Usually means it ran in a **non-empty folder**. Either tell it "re-execute Section 6 steps 1-11 one by one, skip nothing", or — most reliable — start over in a fresh empty folder (30 seconds).
+
 **Can I edit the Blueprint / contract?**
 Of course — it's your brain. After setup the rules live in `system/CLAUDE.md`; edit them in plain language (e.g. "be more brief"). Friday follows the new rules from its next task.
 

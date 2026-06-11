@@ -40,7 +40,7 @@ Usage notes:
 - **inbox/**: never organize here — its job is to catch. Say **"clean up my inbox"** and Friday triages, waiting for your confirmation.
 - **exec/**: Friday sets up two standing files — `Weekly Plan.md` and `Decision Log.md` (decisions + reasons, so you never re-litigate the same question — a habit most people have never experienced; Friday builds it for you).
 - **wiki/**: wikilinked knowledge; frontmatter added automatically. **At 10+ notes Friday proactively builds an Overview (MOC) page** — your knowledge map.
-- **skills/**: your brain is **born with two skills** (inbox cleanup, weekly review); every good habit can be distilled the same way.
+- **skills/**: your brain is **born with three skills** (inbox cleanup, weekly review, folder import); every good habit can be distilled the same way.
 - **raw/**: Friday reads but never modifies — the immutable region.
 - **system/**: the contract (Section 3) + templates (Section 4). Want to tune Friday? Edit the contract in plain language.
 
@@ -67,7 +67,7 @@ Speak the owner's language: concise, warm, **conclusion first, no rambling, no f
 
 - Call them: (to be interviewed)
 - This brain mainly manages: (to be interviewed)
-- Preferred style: (to be interviewed)
+- Preferred style: (to be interviewed; default if unset = standard, conclusion-first)
 
 ## The regions
 
@@ -110,8 +110,9 @@ Speak the owner's language: concise, warm, **conclusion first, no rambling, no f
 | "Clean up my inbox" | Triage per routing rules, list destinations, execute after confirmation |
 | "What's on today/this week" | Read exec/, prioritized list |
 | "The usual, …" | Find the matching skill in skills/, execute by its format |
-| "Turn this into a skill" | Write a new skill from system/templates/Skill Template.md |
+| "Turn this into a skill" | **Check skills/ for an existing similar one first** — propose merging if found; only then create from the template |
 | "Weekly review" | Run skills/Weekly Review.md |
+| "Move this folder in: <path>" | Run skills/Import Folder.md: copy into raw/ → report → options |
 
 ## The one rule
 
@@ -209,7 +210,7 @@ tags: [skill]
 
 ## 5. Starter skills (skills/)
 
-The brain is born with two skills:
+The brain is born with three skills:
 
 **`skills/Inbox Cleanup.md`**:
 
@@ -269,6 +270,38 @@ tags: [skill]
 - The review lightens the owner's load — assistant's tone, not a boss's
 ```
 
+**`skills/Import Folder.md`**:
+
+```markdown
+---
+type: skill
+name: Import Folder
+trigger: "move this folder in: <paste path>"
+created: 2026-__-__
+updated: 2026-__-__
+tags: [skill]
+---
+
+# Skill · Import Folder
+
+**Trigger**: "move this folder in: C:\... (paste the folder path)"
+**When to use**: bring existing files into the brain — the new brain's first real meal.
+
+## Steps
+1. Verify the path exists; **copy only — never move or delete originals**
+2. If 50+ files or large size, list the inventory first and get confirmation
+3. Copy into raw/<folder-name>/, preserving structure
+4. Produce a **Move-in Report**: counts by type, largest files, three-line topic overview
+5. Offer three options: ① distill key files into wiki via template ② build a wiki overview page for the batch ③ leave as-is for now
+
+## Output format (fixed)
+> **Move-in Report**: copied X files (Y MB) → raw/XX/ | type table | topics | then options ①②③
+
+## ⚠️ Lessons learned
+- Never touch originals — losing files is the owner's #1 fear
+- Strip surrounding quotes from pasted paths; spaces/CJK in paths are fine
+```
+
 ## 6. Setup instructions
 
 ### For Friday: execute exactly 🤖
@@ -277,16 +310,20 @@ tags: [skill]
 2. Create folders: `inbox/`, `exec/`, `wiki/`, `skills/`, `raw/`, `system/`, `system/templates/`.
 3. Write the **Section 3 code block** verbatim into `system/CLAUDE.md`.
 4. Write the **three Section 4 templates** into `system/templates/`.
-5. Write the **two Section 5 skills** into `skills/` (set `created` to today).
+5. Write the **three Section 5 skills** into `skills/` (set `created` to today).
 6. Create `exec/Weekly Plan.md` (three goals, empty + Friday review, empty) and `exec/Decision Log.md` (empty table: date/decision/reason/premise, plus one line: "Decisions live here so nothing gets re-litigated").
 7. Create `wiki/Welcome.md` with demonstration frontmatter and a few lines on wikilinks.
 8. Move this blueprint into `system/` for archival.
-9. **⭐ Interview the owner** (all three at once, briefly): ① What should I call you? ② What will this brain mainly manage? ③ What answer style do you prefer? — **Write the answers into the "Your owner" section of `system/CLAUDE.md`** and read them back to confirm.
+9. **⭐ Interview the owner** (all three at once, briefly): ① What should I call you? ② What will this brain mainly manage? ③ What answer style do you prefer? **Show the owner this three-tier comparison first** (example: "what's on tomorrow"):
+    - **Brief & direct**: "3 things: ①14:00 meeting ②weekly report ③client call." — answers only; **beginners may find it cold and terse**
+    - **Standard: conclusion first, then detail (🌟 recommended for beginners)**
+    - **Detailed**: also explains the why and the risks
+    Tell the owner the style can be changed anytime ("be chattier / be briefer"). — **Write the answers into "Your owner" in `system/CLAUDE.md`** and read them back.
 10. Invite the owner to mention one thing currently on their mind; demonstrate: capture to inbox → suggest filing → finally report the brain's full structure and the six trigger phrases.
 11. **Self-check and report (do not skip)**: output ✅/❌ against this checklist, fix any ❌ on the spot — all ✅ means done:
     - `system/CLAUDE.md` exists with "Your owner" filled from the interview
     - 3 templates under `system/templates/`
-    - 2 starter skills under `skills/`
+    - 3 starter skills under `skills/`
     - `exec/Weekly Plan.md` and `exec/Decision Log.md` created
     - `wiki/Welcome.md` created
     - this blueprint archived into `system/`
@@ -302,6 +339,7 @@ Do nothing beyond these steps; never delete or modify the owner's other files.
 ## 7. Your first week
 
 - **Day 1**: say "**Save to inbox: …**" for everything — feed first, don't organize.
+- **Day 2**: copy a folder path from your file manager and say "**move this folder in: (paste path)**" — your real files enter raw/ with a move-in report and next-step options.
 - **Day 3**: say "**clean up my inbox**" and watch it triage.
 - **Day 5**: say "**weekly review**".
 - **Anytime**: it did something well? Say "**turn this into a skill**".
