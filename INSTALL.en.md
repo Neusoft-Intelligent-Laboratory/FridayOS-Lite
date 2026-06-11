@@ -1,9 +1,13 @@
-# 🛠️ FridayOS‑Lite Install Guide (Beginner Edition)
+# 🛠️ FridayOS‑Lite Install Guide (for beginners)
 
-> Just follow along. **About 20 minutes, no coding, no VPN.**
-> Before you start, spend 3 minutes on 👉 [`TOOLS.en.md`](./TOOLS.en.md) so each tool makes sense.
+> Just follow the clicks. **~30 minutes total, no coding, no VPN.**
+> Strongly recommended: spend 3 minutes on [`TOOLS.en.md`](./TOOLS.en.md) first so each step makes sense.
 >
-> 🌐 中文：[`安装指南.md`](./安装指南.md) · Stuck? 👉 [`FAQ.en.md`](./FAQ.en.md)
+> 🌐 中文版: [`安装指南.md`](./安装指南.md) · Stuck? 👉 [`FAQ.en.md`](./FAQ.en.md)
+
+![FridayOS-Lite system architecture](./docs/images/architecture.png)
+
+> The big picture: you → Obsidian (Claudian inside) → Claude Code engine → cc-switch → DeepSeek, and the answer flows back. We'll install in that spirit, step by step.
 
 ---
 
@@ -11,70 +15,192 @@
 
 | Item | Notes |
 |---|---|
-| 💻 A computer | Windows or Mac (Claudian is desktop‑only) |
-| 🌐 Internet | **No VPN needed** if you use the domestic mirror below |
-| ⏱️ ~20 min | First time, take it slow |
-| 💰 ~$2 | Top up DeepSeek a little; usage is extremely cheap |
+| 💻 A computer | Windows or Mac (Claudian doesn't support phones/tablets) |
+| 🌐 Internet | **No VPN needed** |
+| ⏱️ ~30 minutes | First time? Take it slow — going over is normal |
+| 💰 ~¥10 (≈$1.5) | Top up DeepSeek; usage is extremely cheap |
+
+---
 
 ## ⚠️ Install order ≠ explanation order
 
-[`TOOLS.en.md`](./TOOLS.en.md) explains the layers outside‑in (Obsidian → Claudian → Claude Code → cc-switch → DeepSeek) so they're easy to understand. But when you actually install, the order shifts slightly:
-
-- **cc-switch needs a DeepSeek key first**, so we grab the key earlier.
-- **Claudian comes last** — the engine (Claude Code) and chip (DeepSeek) must be wired up before there's anything for it to use.
-
-Real hands‑on order:
+[`TOOLS.en.md`](./TOOLS.en.md) explains outside-in: **Obsidian → Claudian → Claude Code → cc-switch → DeepSeek**. But we install in a different order, because cc-switch needs your DeepSeek key first, and Claudian comes last — it only works once the engine and model are wired up.
 
 ```
-Step 0 Node.js → Step 1 Obsidian + template → Step 2 DeepSeek key
-   → Step 3 Claude Code → Step 4 cc-switch → Step 5 Claudian → ✅ done
+Step 0 Node.js (foundation) → Step 1 Obsidian + empty folder + Blueprint (body)
+  → Step 2 DeepSeek key (the chip) → Step 3 Claude Code (the engine)
+  → Step 4 cc-switch (wire the chip) → Step 5 Claudian (invite the AI in)
+  → Step 6 One sentence — Friday builds the brain itself → ✅ Done
 ```
 
-## Step 0 — Install Node.js (the foundation)
-Claude Code and cc-switch both run on Node.js. Go to **https://nodejs.org**, click the big **LTS** button, install with all defaults. Verify by opening a terminal (Windows: `Win+R` → `cmd`; Mac: Terminal) and running `node -v`. A version number means success.
+---
 
-## Step 1 — Install Obsidian + open the brain template
-Get Obsidian at **https://obsidian.md** and install it. Unzip the `vault-template` folder Lite gave you, rename it (e.g. `MyBrain`), and in Obsidian choose **"Open folder as vault"** → select it. If asked, click **Trust author and enable plugins**. You'll see the `inbox / exec / wiki / skills / raw / system` folders. Read `先看我-START-HERE` first. The body exists now — but it has no AI yet.
+## Step 0: Install Node.js (foundation, 5 min)
 
-## Step 2 — Register DeepSeek, top up, get an API key
-Go to **https://platform.deepseek.com**, sign up, and **top up ~$2** under Balance. Click **API keys → Create new API key**, name it (e.g. `friday`). ⚠️ The `sk-xxxx...` string **shows only once** — copy it into a notepad immediately. Lost it? Just delete and make a new one. 🔒 Treat it like a password; never post it online. Remember two values for Step 4:
-- Base URL (Anthropic‑compatible): `https://api.deepseek.com/anthropic`
-- Models: `deepseek-v4-pro[1m]` (main) and `deepseek-v4-flash` (light/cheap)
+**Why**: Claude Code and cc-switch are built on Node.js. Install once, forget forever.
 
-## Step 3 — Install Claude Code (domestic mirror, no VPN)
-Open a terminal and paste this one line (uses a China mirror, no VPN needed):
-```
-npm install -g @anthropic-ai/claude-code --registry=https://registry.npmmirror.com
-```
-Wait for it to finish, then verify with `claude --version`. Don't log in yet — it defaults to the paid official models; the next step redirects it to DeepSeek.
+1. Open **https://nodejs.org** → click the big **"LTS"** button → download.
+2. Double-click to install, click **Next** all the way, defaults are fine.
+3. Verify:
+   - Windows: `Win + R`, type `cmd`, Enter.
+   - Mac: open **Terminal**.
+   - Type and press Enter:
+     ```
+     node -v
+     ```
+   - A version number (like `v20.11.0`) means success ✅.
 
-## Step 4 — Install cc-switch + connect DeepSeek ⭐ key step
-Download cc-switch from **https://ccswitch.io** (or **https://github.com/farion1231/cc-switch/releases**) — `.msi/.exe` for Windows, `.dmg` for Mac. Open it; the default top tab is **Claude**. Click **"+"** to add a provider:
-- Pick **DeepSeek** from the preset list.
-- **API Key:** paste your `sk-...`.
-- **Base URL:** `https://api.deepseek.com/anthropic`.
-- **Models:** `deepseek-v4-pro[1m]` and `deepseek-v4-flash`.
+> 📸 *(screenshot: Node.js LTS download button)*
 
-In **Settings**, enable **Apply to Claude Code Plugin** and **Skip Claude Code Initial Setup**. Back on the main screen, select DeepSeek and click **Sync to All Apps**. Your engine now runs on DeepSeek. (Test: in a terminal, `cd` to your brain folder, run `claude`, choose **I trust**, ask anything.)
+---
 
-## Step 5 — Install Claudian, bring Friday into Obsidian
-In Obsidian → **Settings (gear)** → **Community plugins** → turn them on → **Browse** → search **`Claudian`** → **Install** → **Enable**. In Claudian's settings, set **Provider = Claude** (Claude Code). It will use the local Claude Code engine that cc-switch already pointed at DeepSeek. A Claudian icon appears in the sidebar — that's your chat with Friday. (Requires Obsidian ≥ 1.8.9, desktop only.)
+## Step 1: Install Obsidian + create an empty folder + add the Blueprint (5 min)
 
-> ℹ️ **Why you can't skip Step 3 (Claude Code):** Claudian is only a shell — it can't think on its own and drives the Claude Code CLI under the hood (its official requirement). No Claude Code = `spawn claude ENOENT` and nothing works. But installing it needs **no subscription, no login, no VPN** — that paid/blocked part is exactly what cc-switch + DeepSeek replace.
+**Why**: Obsidian is your second brain's "body". All this step needs: one **empty folder** plus **one document**.
 
-## ✅ Done — test it
-In the Claudian chat, say:
-> **Hi Friday, save this to my inbox: meeting with Mr. Zhang tomorrow at 3pm.**
+1. Open **https://obsidian.md** → **Download** → install.
+2. Create an **empty folder** on your computer, e.g. `My Brain`, somewhere easy to find like Documents.
+3. **Download the one file — the Friday Brain Blueprint** — into that folder:
+   - On this project's GitHub page, click **`FRIDAY-BLUEPRINT.en.md`**;
+   - Click the **download icon (Download raw file, the ⬇ arrow)** at the top-right of the file view;
+   - Move the downloaded file into `My Brain`.
+4. Open Obsidian → **"Open folder as vault"** → select `My Brain`.
+5. You'll see the Blueprint in the left sidebar. **Read it once** — it's the complete drawing of your second brain.
 
-If a new note appears in `inbox/`, 🎉 your AI second brain is live.
+> Right now your brain is just a drawing — no building yet. **Don't create any folders by hand.**
+> In Step 6, Friday will construct everything from the drawing itself.
+>
+> 📸 *(screenshot: GitHub ⬇ download button + Obsidian "Open folder as vault")*
+
+---
+
+## Step 2: Register DeepSeek + top up + get an API key (5 min)
+
+**Why now**: the engine you install next needs this "key" immediately.
+
+1. Open **https://platform.deepseek.com**
+2. **Register and log in** with phone/email.
+3. **Top up**: find "Billing / Balance", add **¥10** — plenty to start (pay-as-you-go, very cheap).
+4. **Create a key**: left sidebar **"API keys"** → **"Create new API key"** → any name (e.g. `friday`).
+5. ⚠️ **Critical**: the `sk-xxxxxxxx...` string **shows only once!**
+   Copy it immediately into a notepad. Lost it? No panic — delete the key and create a new one.
+
+> 🔒 This key = your account's password. **Never share it or post it online.**
+>
+> 📸 *(screenshot: DeepSeek create-key dialog + billing page)*
+
+**Note these two values for Step 4:**
+- Base URL (Anthropic-compatible): `https://api.deepseek.com/anthropic`
+- Models: `deepseek-v4-pro[1m]` (main, smart) and `deepseek-v4-flash` (light, cheap)
+
+---
+
+## Step 3: Install the Claude Code engine (one-time, no login, no VPN, 5 min)
+
+**Why required**: many assume "Claudian alone is enough" — it isn't. **Claudian is only a shell**; it doesn't think. It drives Claude Code as its engine (an official hard requirement). Without it, Claudian throws errors like `spawn claude ENOENT`.
+
+> ✅ **Relax**: this step **only installs a program — no subscription, no Anthropic login, no VPN**.
+> The paid/VPN parts are exactly what cc-switch + DeepSeek eliminate in the next step.
+> In one line: **Claude Code = the engine (install once); cc-switch = swap in DeepSeek's cheap chip.**
+
+1. Open a terminal (Windows: `Win+R` → `cmd`; Mac: Terminal).
+2. Paste this **whole line** and press Enter (uses a China mirror; outside China you may drop the `--registry` part):
+   ```
+   npm install -g @anthropic-ai/claude-code --registry=https://registry.npmmirror.com
+   ```
+3. Wait a minute or two (lots of scrolling text is normal).
+4. Verify:
+   ```
+   claude --version
+   ```
+   A version number = success ✅.
+
+> 💡 Don't run `claude` to log in yet — by default it connects to the paid official models.
+> Next step, cc-switch points it at DeepSeek instead; no login ever needed.
+>
+> 📸 *(screenshot: `claude --version` showing a version number)*
+
+---
+
+## Step 4: Install cc-switch + wire up DeepSeek (3 min) ⭐ The key step
+
+**Why**: cc-switch is the "switcher" — two clicks point the engine at DeepSeek. No code, no environment variables.
+
+1. Open **https://ccswitch.io** (or **https://github.com/farion1231/cc-switch/releases**).
+2. Download for your system (Windows `.msi`/`.exe`; Mac `.dmg`), install with defaults.
+3. Open cc-switch; the top tab defaults to **Claude** (that's the one we use).
+4. Click **"+"** to add a Provider:
+   - Pick **DeepSeek** from the preset list.
+   - **API Key**: paste your `sk-...` from Step 2.
+   - **Base URL**: confirm `https://api.deepseek.com/anthropic`.
+   - **Models**: `deepseek-v4-pro[1m]` and `deepseek-v4-flash` (`[1m]` enables long context — keep it).
+   - Save.
+5. In **Settings**, enable both:
+   - ✅ **Apply to Claude Code Plugin**
+   - ✅ **Skip Claude Code Initial Setup**
+6. Back on the main screen, **select the DeepSeek provider** → **"Sync to All Apps"**.
+
+> 🎉 The engine now runs on DeepSeek! (Switching to Kimi, GLM, etc. later is one click here.)
+>
+> 📸 *(screenshot: cc-switch DeepSeek provider form + the two Settings toggles)*
+
+---
+
+## Step 5: Install Claudian — invite Friday into Obsidian (3 min)
+
+**Why last**: engine and chip are wired; now the AI moves into your notes app. Goodbye, terminal.
+
+1. Obsidian → **Settings (gear icon)**.
+2. **"Community plugins"** → first time, click **"Turn on community plugins"**.
+3. **"Browse"** → search **`Claudian`** → **Install** → **Enable**.
+4. In Claudian's settings, set **Provider to "Claude"** (i.e., Claude Code).
+   - It automatically uses your local engine — the one cc-switch wired to DeepSeek.
+5. Close settings. A **Claudian icon** appears in the sidebar — that's your chat with Friday.
+
+> ⚠️ Requires Obsidian ≥ 1.8.9 (fresh installs qualify). Desktop only.
+>
+> 📸 *(screenshot: plugin search for Claudian + the sidebar chat)*
+
+---
+
+## Step 6: One sentence — Friday builds the brain itself ✨
+
+All tools in place. Time for Friday's first performance. In the Claudian chat, say:
+
+> **Read the Friday Brain Blueprint and build my brain according to it.**
+
+Friday follows the blueprint on its own: creates the six regions `inbox / exec / wiki / skills / raw / system`, writes `system/CLAUDE.md` (its behavior contract), and archives the blueprint. **You don't create a single folder.**
+
+Then try:
+
+> **Hi Friday, save to inbox: meeting with the boss at 3pm tomorrow.**
+
+If it creates the note in `inbox/` by itself —
+
+🎉 **Congratulations, your AI second brain is live!**
+
+Daily/weekly plans and the inbox-cleanup command are all in Blueprint Section 5. Also try:
+- "Put my three goals for this week into exec."
+- "Clean up my inbox."
+
+> 💡 If Friday doesn't act or builds it wrong: tell it "delete what you just made and re-execute Blueprint Section 4 exactly", or use the Blueprint's manual fallback — six folders by hand, two minutes.
+>
+> 📸 *(screenshot: Friday reporting the build + six folders in the sidebar)*
+
+---
 
 ## 🆘 Stuck?
 
 | Symptom | Fix |
 |---|---|
-| `node -v` / `claude --version` does nothing | Reopen the terminal and retry |
-| `npm install` errors / very slow | Network/mirror hiccup — retry; see [`FAQ.en.md`](./FAQ.en.md) |
-| Friday won't reply / balance error | DeepSeek not topped up, or wrong key in cc-switch |
-| Can't find Claudian | Make sure community plugins are on and Obsidian ≥ 1.8.9 |
+| `node -v` / `claude --version` does nothing | Close and **reopen** the terminal; confirm the previous step finished |
+| `npm install` errors / very slow | Network issue — retry; see [`FAQ.en.md`](./FAQ.en.md) |
+| Friday doesn't reply / balance error | DeepSeek not topped up, or wrong key in cc-switch |
+| Claudian not found in search | Community plugins enabled? Obsidian ≥ 1.8.9? |
+| Friday won't build from the Blueprint | Blueprint must sit in the vault root; tell it to "re-execute Section 4 exactly" |
 
-More 👉 [`FAQ.en.md`](./FAQ.en.md) · [`下载清单.md`](./下载清单.md)
+More 👉 [`FAQ.en.md`](./FAQ.en.md)
+
+---
+
+*FridayOS‑Lite · One document, one sentence, one brain.*

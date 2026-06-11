@@ -1,0 +1,8 @@
+# Obsidian workspace junk (if the repo is ever opened as a vault for testing)
+.obsidian/
+.trash/
+
+# OS junk
+.DS_Stor*
+Thumbs.db
+desktop.ini

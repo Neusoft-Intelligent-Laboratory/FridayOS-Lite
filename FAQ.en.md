@@ -2,43 +2,99 @@
 
 > Don't panic — most issues are here. 中文：[`常见问题.md`](./常见问题.md)
 
+---
+
+## Positioning
+
+**Lite vs. full FridayOS — which one?**
+Lite does one thing: a knowledge base managed with Obsidian + Claudian (the six-region idea). Daily/weekly plans you write by hand or dictate in chat.
+The full version adds automated entry points: Feishu bot capture from anywhere, a `domains/` project workbench, personality adaptation.
+**Start with Lite; when you upgrade, your folder moves over as-is. Zero migration.**
+
+**Why is there no template to download?**
+You don't need one. Lite's entire "template" is one file — [`FRIDAY-BLUEPRINT.en.md`](./FRIDAY-BLUEPRINT.en.md). Drop it into an empty folder, tell Friday "build from this", and the six regions appear. The document *is* the template.
+
+**Do my notes get uploaded anywhere? What about privacy?**
+The note files themselves live **only on your computer** — no cloud account. To be honest though: whatever your conversation touches (your question + the note snippets Friday reads) is sent to the model provider (e.g. DeepSeek) for processing — that's how every AI assistant works. Keep truly sensitive things (passwords, ID numbers) out of Friday's reach.
+
+---
+
 ## Install
 
 **I can't code at all — can I really do this?** Yes. Only two steps need you to paste one line into a terminal; everything else is mouse clicks. Just follow [`INSTALL.en.md`](./INSTALL.en.md).
 
 **Do I need a VPN?** No. Claude Code installs from a China mirror; DeepSeek connects directly.
 
-**How much does it cost?** Only DeepSeek needs a top‑up; a few dollars lasts a long time. Everything else is free.
+**How much does it cost?** Only DeepSeek needs a top-up — ¥10 (≈$1.5) lasts a long while. Everything else is free.
 
-**Phone / tablet?** No — Claudian is desktop‑only (Windows / Mac).
+**Phone / tablet?** No. Claudian is desktop-only (Windows / Mac).
+
+---
+
+## Blueprint / build
+
+**I said "build from the Blueprint" but Friday didn't act / built it wrong?**
+1. Confirm the Blueprint file sits in the vault **root** (not a subfolder).
+2. Tell it: "**Re-execute Blueprint Section 4 exactly.**"
+3. Still stuck? Use the Blueprint's manual fallback — six folders by hand plus one copy-paste, two minutes.
+
+**Can I edit the Blueprint / contract?**
+Of course — it's your brain. After setup the rules live in `system/CLAUDE.md`; edit them in plain language (e.g. "be more brief"). Friday follows the new rules from its next task.
+
+---
 
 ## Terminal
 
-**`node -v` or `claude --version` does nothing / "not recognized"?** Fully close the terminal and reopen it (newly installed tools need a fresh window). Make sure the previous step actually finished.
+**`node -v` or `claude --version` does nothing / "not recognized"?**
+1. Close the terminal **completely and reopen** (new installs need a fresh window).
+2. Confirm the previous step actually finished (no Node.js → no claude).
 
-**`npm install ...` is slow / throws red errors?** Usually a network blip — rerun the exact line. Still failing? Swap the mirror to `--registry=https://registry.npmjs.org`. Confirm Node.js is LTS (v18+).
+**`npm install ...` is slow / spews red errors?**
+1. Usually network — **run the exact same line again**.
+2. Still failing, swap the mirror:
+   `npm install -g @anthropic-ai/claude-code --registry=https://registry.npmjs.org`
+3. Confirm Node.js is LTS (v18+).
 
-**`claude` asks me to log in / subscribe?** cc-switch hasn't redirected it to DeepSeek yet. Redo **Step 4**: create the DeepSeek provider, paste the key correctly, click **Sync**, and enable **Apply to Claude Code Plugin**.
+**`claude` asks me to log in / subscribe?**
+cc-switch hasn't taken over yet. Go back to [`INSTALL.en.md`](./INSTALL.en.md) **Step 4**: DeepSeek provider created, key pasted correctly, "Sync" clicked, "Apply to Claude Code Plugin" enabled.
 
-## DeepSeek / Key
+---
 
-**I closed the key popup without copying it.** Delete that key on the DeepSeek platform and create a new one — copy it immediately this time.
+## DeepSeek / API key
 
-**Friday won't reply / balance / 401 / auth error?** Check three things in order: (1) Did you top up DeepSeek? (2) Is the API key in cc-switch exactly right (no stray spaces)? (3) Is the Base URL `https://api.deepseek.com/anthropic` (don't drop `/anthropic`)?
+**Closed the key popup without copying?** Fine — delete that key on the platform and create a new one. Copy it immediately this time.
 
-**Which model names?** Main `deepseek-v4-pro[1m]`, cheaper `deepseek-v4-flash`. `[1m]` is the long‑context variant — keep it.
+**Friday won't reply / insufficient balance / 401?** Check in order:
+1. **Topped up?** Zero balance = no replies.
+2. **Key pasted right** in cc-switch? No extra spaces / missing characters?
+3. Base URL exactly `https://api.deepseek.com/anthropic` (**don't drop `/anthropic`**).
+
+**Which model names?** Main: `deepseek-v4-pro[1m]`; budget: `deepseek-v4-flash`. `[1m]` = long context, keep it.
+
+---
 
 ## Claudian / Obsidian
 
-**If I install Claudian, can I skip Claude Code?** No — Claude Code is required. Claudian is just a shell that drives the Claude Code CLI under the hood (its official requirement); without it you get `spawn claude ENOENT`. But installing it needs no subscription, no login, no VPN — that's what cc-switch + DeepSeek replace. Claude Code = engine (install once); cc-switch = swaps in the cheap DeepSeek chip.
+**If I installed Claudian, can I skip Claude Code?**
+No — **Claude Code is required**. Claudian is just a shell/steering wheel; it drives Claude Code as its engine (official hard requirement; without it you get `spawn claude ENOENT`). Installing the engine needs no subscription, no login, no VPN — cc-switch + DeepSeek handle the rest.
 
-**Can't find Claudian in community plugins?** Make sure you clicked "Turn on community plugins," Obsidian is ≥ 1.8.9, and you spelled `Claudian`.
+**Can't find Claudian in community plugins?**
+1. "Turn on community plugins" clicked? 2. Obsidian ≥ 1.8.9? 3. Spelling: `Claudian`.
 
-**Claudian installed but won't connect to the AI?** In Claudian settings set **Provider = Claude** (Claude Code). This requires `claude --version` to work and cc-switch to already point at DeepSeek.
+**Claudian installed but unresponsive / can't reach the AI?**
+Set **Provider to "Claude"** (i.e., Claude Code) in Claudian's settings. Prerequisites: `claude --version` works, cc-switch synced to DeepSeek.
 
-**New computer — will I lose my brain?** No. Your brain is the folder — just copy it over and reinstall the apps.
+**New computer — do I lose my brain?**
+Never. Your brain is the folder — **copy it**. Reinstall the apps on the new machine.
+
+---
 
 ## Still stuck?
-Note the screenshot/error at the step you're on, and confirm every earlier step succeeded. Docs: DeepSeek 👉 https://api-docs.deepseek.com · cc-switch 👉 https://github.com/farion1231/cc-switch
 
-> Order matters: Node → Obsidian → DeepSeek key → Claude Code → cc-switch → Claudian. If a step fails, confirm the ones before it worked.
+- Note the **screenshot / error text** of the step you're stuck on.
+- Re-check every earlier step in [`INSTALL.en.md`](./INSTALL.en.md) ✅.
+- **Ask in the community group** (WeCom QR coming soon — see README) or open an Issue in this repo.
+- Official docs: DeepSeek × Claude Code 👉 https://api-docs.deepseek.com · cc-switch 👉 https://github.com/farion1231/cc-switch
+
+> Order matters: foundation (Node) → body (Obsidian + Blueprint) → chip key (DeepSeek) → engine (Claude Code) → wiring (cc-switch) → AI moves in (Claudian) → one sentence builds the brain.
+> Whatever step fails, first confirm everything before it succeeded.
