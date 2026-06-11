@@ -21,7 +21,7 @@ Human brains are great at thinking, terrible at storage. A second brain is exter
 Three principles:
 
 1. **One folder is one brain.** Plain `.md` text, no database, no lock-in. Copy the folder, move your whole brain.
-2. **Notes flow; they don't pile up.** Knowledge has a lifecycle: captures (`inbox`) → in motion (`exec`) → worth keeping (`wiki`) → repeated work becomes routine (`skills`). What doesn't flow gets deleted.
+2. **Notes flow; they don't pile up.** Knowledge has a lifecycle: captures (`inbox`) → in motion (`exec`) → worth keeping (`wiki`) → repeated work becomes routine (`skills`). What doesn't flow gets deleted. **The partitions also save money**: Friday reads per-region and scans frontmatter instead of whole files — a measured multi-file analysis over 100+ records costs ≈¥0.02.
 3. **You think, Friday remembers.** Say something in passing — it files it. Ask a question — it searches your brain first.
 
 ## 2. The six regions

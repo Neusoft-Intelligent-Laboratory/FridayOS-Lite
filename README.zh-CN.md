@@ -42,7 +42,7 @@
 
 ## 🗺️ 五个工具怎么搭起来
 
-![FridayOS-Lite 系统结构图](./docs/images/architecture.png)
+![FridayOS-Lite —— 五个工具，一条信号链](./docs/images/tools-flow.gif)
 
 > 蓝色 = 你看见、动手操作的；绿色 = 幕后帮你思考的。每个工具是什么、为什么需要，详见 [`工具说明.md`](./工具说明.md)。
 

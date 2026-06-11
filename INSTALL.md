@@ -5,7 +5,7 @@
 >
 > 🌐 中文版: [`安装指南.md`](./安装指南.md) · Stuck? 👉 [`FAQ.md`](./FAQ.md)
 
-![FridayOS-Lite system architecture](./docs/images/architecture.png)
+![FridayOS-Lite system architecture](./docs/images/tools-flow.gif)
 
 > The big picture: you → Obsidian (Claudian inside) → Claude Code engine → cc-switch → DeepSeek, and the answer flows back. We'll install in that spirit, step by step.
 
@@ -26,7 +26,7 @@
 
 [`TOOLS.md`](./TOOLS.md) explains outside-in; we install inside-out — backstage first, Friday last:
 
-![Install flow: three acts, seven steps, one sentence wakes Friday](./docs/images/install-flow.png)
+![Install flow: three acts, seven steps, one sentence wakes Friday](./docs/images/install-flow.gif)
 
 ```
 Act 1 Backstage (terminal, once, never again): Step 1 Node.js → Step 2 Claude Code

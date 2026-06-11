@@ -42,7 +42,7 @@ It does **not** do automated integrations: no Feishu bot, no capture-from-anywhe
 
 ## 🗺️ How it fits together
 
-![FridayOS-Lite system architecture](./docs/images/architecture.png)
+![FridayOS-Lite — five tools, one signal chain](./docs/images/tools-flow.gif)
 
 > Indigo = what you touch; teal = what thinks beneath. See [`TOOLS.md`](./TOOLS.md) for what each tool is and why.
 

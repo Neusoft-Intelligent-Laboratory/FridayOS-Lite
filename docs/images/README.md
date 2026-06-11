@@ -1,6 +1,6 @@
 # 图片资源说明
 
-- `hero.png` / `architecture.png` / `install-flow.png` —— README 封面、结构图、三幕安装流程图（Schematic Mind 风格，PL.01-03）
+- `hero.gif` / `tools-flow.gif` / `install-flow.gif` —— 暗色呼吸动图三件套（主视觉/PL.01链路/PL.03三幕）；`hero.png` / `architecture.png` / `install-flow.png` 为静态备份（Social Preview 用 hero.png）
 - `gif/` 下按工具命名（node / obsidian-vault / deepseek-key / claude-code / ccswitch-* / claudian / blueprint-build）—— 安装指南第 1~7 步操作录屏，文件名不随步骤编号变
 - `gif/demo-act2.gif` —— README 示例大脑实录
 - 待补：`group-qr.png`（企业微信群二维码，README 已留占位注释）
