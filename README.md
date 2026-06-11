@@ -14,7 +14,7 @@
 
 ![无需翻墙](https://img.shields.io/badge/无需翻墙-✓-10B981?style=flat-square) ![无需订阅](https://img.shields.io/badge/便宜到几毛钱-DeepSeek_V4-4F46E5?style=flat-square) ![约30分钟](https://img.shields.io/badge/约30分钟装好-22D3EE?style=flat-square) ![License: MIT](https://img.shields.io/badge/License-MIT-7C3AED?style=flat-square)
 
-<sub>由 Neusoft Intelligence Lab 打造 · 想要更强的完整版？见 <a href="https://github.com/Neusoft-Intelligent-Laboratory/FridayOS">FridayOS</a></sub>
+<sub>由 Neusoft Intelligence Lab 打造 · 想要 AI 自主运维的完整版（自动捕获 + 机械保障）？见 <a href="https://github.com/Neusoft-Intelligent-Laboratory/FridayOS">FridayOS</a></sub>
 
 </div>
 
@@ -24,7 +24,7 @@
 
 **Lite 只专注一件事：教你用 Obsidian + Claudian 管好自己的知识库**——也就是 Friday 的"第二大脑"本体。学会六个脑区的分区理念，让 AI 帮你随手记、定期理、随时找。每日计划、周计划这类记录，你在 Obsidian 里手动写或在对话里让 Friday 代笔。
 
-它**不做**自动化接入：没有飞书机器人、没有随时随地的消息捕获。那些是正式版 [FridayOS](https://github.com/Neusoft-Intelligent-Laboratory/FridayOS) 的事——等你用 Lite 把分区理念用顺了，文件夹原样带过去升级即可，零迁移。
+它**不做**自动化接入：没有飞书机器人、没有随时随地的消息捕获，也没有给大脑定期体检的机械保障（lint 脚本、记忆衰减、入站安全）。那些是正式版 [FridayOS](https://github.com/Neusoft-Intelligent-Laboratory/FridayOS) 的事——**AI 不只帮你记，还按一份契约自主运维整个大脑**。等你用 Lite 把分区理念用顺了，文件夹原样带过去升级即可，零迁移。
 
 **Lite 给这样的你：**
 - 没听过 Claude、Obsidian，也不知道去哪下、怎么装

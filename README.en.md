@@ -14,7 +14,7 @@ and the AI builds your second brain, **Friday**, by itself.
 
 ![No VPN](https://img.shields.io/badge/No_VPN-✓-10B981?style=flat-square) ![Cheap](https://img.shields.io/badge/pennies-DeepSeek_V4-4F46E5?style=flat-square) ![~30 min](https://img.shields.io/badge/~30_min_setup-22D3EE?style=flat-square) ![License: MIT](https://img.shields.io/badge/License-MIT-7C3AED?style=flat-square)
 
-<sub>Built by Neusoft Intelligence Lab · Want the full power? See <a href="https://github.com/Neusoft-Intelligent-Laboratory/FridayOS">FridayOS</a></sub>
+<sub>Built by Neusoft Intelligence Lab · Want the agent-operated full version (auto-capture + mechanical safeguards)? See <a href="https://github.com/Neusoft-Intelligent-Laboratory/FridayOS">FridayOS</a></sub>
 
 </div>
 
@@ -24,7 +24,7 @@ and the AI builds your second brain, **Friday**, by itself.
 
 **Lite focuses on one thing: teaching you to manage a knowledge base with Obsidian + Claudian** — the body of Friday's second brain. Learn the six-region partition idea, and let the AI capture, organize, and retrieve for you. Daily and weekly plans you write by hand in Obsidian, or dictate to Friday in chat.
 
-It does **not** do automated integrations: no Feishu bot, no capture-from-anywhere messaging. Those belong to the full [FridayOS](https://github.com/Neusoft-Intelligent-Laboratory/FridayOS) — once the partition idea clicks, your folder moves over as-is. Zero migration.
+It does **not** do automated integrations: no Feishu bot, no capture-from-anywhere messaging, and no mechanical safeguards (lint health checks, memory decay, inbound security). Those belong to the full [FridayOS](https://github.com/Neusoft-Intelligent-Laboratory/FridayOS) — where the AI doesn't just take notes for you, it **runs the whole brain under a contract**. Once the partition idea clicks, your folder moves over as-is. Zero migration.
 
 **Lite is for people who:**
 - Have never heard of Claude or Obsidian and don't know where to download them
