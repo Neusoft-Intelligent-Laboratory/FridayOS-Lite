@@ -39,7 +39,7 @@ Step 0 Node.js (foundation) → Step 1 Obsidian + empty folder + Blueprint (body
 
 **Why**: Claude Code and cc-switch are built on Node.js. Install once, forget forever.
 
-1. Open **https://nodejs.org** → click the big **"LTS"** button → download.
+1. Open [**nodejs.org**](https://nodejs.org) → click the big **"LTS"** button → download.
 2. Double-click to install, click **Next** all the way, defaults are fine.
 3. Verify:
    - Windows: `Win + R`, type `cmd`, Enter.
@@ -58,7 +58,7 @@ Step 0 Node.js (foundation) → Step 1 Obsidian + empty folder + Blueprint (body
 
 **Why**: Obsidian is your second brain's "body". All this step needs: one **empty folder** plus **one document**.
 
-1. Open **https://obsidian.md** → **Download** → install.
+1. Open [**obsidian.md**](https://obsidian.md) → **Download** → install.
 2. Create an **empty folder** on your computer, e.g. `My Brain`, somewhere easy to find like Documents.
 3. **Download the one file — the Friday Brain Blueprint** — into that folder:
    - On this project's GitHub page, click **`FRIDAY-BLUEPRINT.en.md`**;
@@ -78,7 +78,7 @@ Step 0 Node.js (foundation) → Step 1 Obsidian + empty folder + Blueprint (body
 
 **Why now**: the engine you install next needs this "key" immediately.
 
-1. Open **https://platform.deepseek.com**
+1. Open [**platform.deepseek.com**](https://platform.deepseek.com)
 2. **Register and log in** with phone/email.
 3. **Top up**: find "Billing / Balance", add **¥10** — plenty to start (pay-as-you-go, very cheap).
 4. **Create a key**: left sidebar **"API keys"** → **"Create new API key"** → any name (e.g. `friday`).
@@ -126,7 +126,7 @@ Step 0 Node.js (foundation) → Step 1 Obsidian + empty folder + Blueprint (body
 
 **Why**: cc-switch is the "switcher" — two clicks point the engine at DeepSeek. No code, no environment variables.
 
-1. Open **https://ccswitch.io** (or **https://github.com/farion1231/cc-switch/releases**).
+1. Open [**ccswitch.io**](https://ccswitch.io) (or the [GitHub releases page](https://github.com/farion1231/cc-switch/releases)).
 2. Download for your system (Windows `.msi`/`.exe`; Mac `.dmg`), install with defaults.
 3. Open cc-switch; the top tab defaults to **Claude** (that's the one we use).
 4. Click **"+"** to add a Provider:
