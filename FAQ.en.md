@@ -25,7 +25,7 @@ The note files themselves live **only on your computer** — no cloud account. T
 
 **Do I need a VPN?** No. Claude Code installs from a China mirror; DeepSeek connects directly.
 
-**How much does it cost?** Only DeepSeek needs a top-up — ¥10 (≈$1.5) lasts a long while. Everything else is free.
+**How much does it cost?** Only DeepSeek needs a top-up — ¥10 (≈$1.5) lasts a long while. Everything else is free. Measured: all 11 demo prompts (multi-file analysis over 169 notes) cost **¥0.26 total**.
 
 **Phone / tablet?** No. Claudian is desktop-only (Windows / Mac).
 

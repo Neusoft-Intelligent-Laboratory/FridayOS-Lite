@@ -283,6 +283,13 @@ tags: [skill]
 8. Move this blueprint into `system/` for archival.
 9. **⭐ Interview the owner** (all three at once, briefly): ① What should I call you? ② What will this brain mainly manage? ③ What answer style do you prefer? — **Write the answers into the "Your owner" section of `system/CLAUDE.md`** and read them back to confirm.
 10. Invite the owner to mention one thing currently on their mind; demonstrate: capture to inbox → suggest filing → finally report the brain's full structure and the six trigger phrases.
+11. **Self-check and report (do not skip)**: output ✅/❌ against this checklist, fix any ❌ on the spot — all ✅ means done:
+    - `system/CLAUDE.md` exists with "Your owner" filled from the interview
+    - 3 templates under `system/templates/`
+    - 2 starter skills under `skills/`
+    - `exec/Weekly Plan.md` and `exec/Decision Log.md` created
+    - `wiki/Welcome.md` created
+    - this blueprint archived into `system/`
 
 Do nothing beyond these steps; never delete or modify the owner's other files.
 

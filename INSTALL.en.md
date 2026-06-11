@@ -185,6 +185,8 @@ Daily/weekly plans and the inbox-cleanup command are all in Blueprint Section 7.
 - "Put my three goals for this week into exec."
 - "Clean up my inbox."
 
+> ✅ It should end with a **self-check list** (Blueprint Section 6, step 11); if it doesn't, say "run the Section 6 step-11 self-check".
+>
 > 💡 If Friday doesn't act or builds it wrong: tell it "delete what you just made and re-execute Blueprint Section 6 exactly", or use the Blueprint's manual fallback — six folders by hand, two minutes.
 
 ![Step 6: Friday builds the brain from the Blueprint](./docs/images/gif/step6-blueprint-build.gif)
