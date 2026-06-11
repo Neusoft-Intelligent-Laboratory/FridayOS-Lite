@@ -1,9 +1,9 @@
 # 🛠️ FridayOS‑Lite Install Guide (for beginners)
 
 > Just follow the clicks. **~30 minutes total, no coding, no VPN.**
-> Strongly recommended: spend 3 minutes on [`TOOLS.en.md`](./TOOLS.en.md) first so each step makes sense.
+> Strongly recommended: spend 3 minutes on [`TOOLS.md`](./TOOLS.md) first so each step makes sense.
 >
-> 🌐 中文版: [`安装指南.md`](./安装指南.md) · Stuck? 👉 [`FAQ.en.md`](./FAQ.en.md)
+> 🌐 中文版: [`安装指南.md`](./安装指南.md) · Stuck? 👉 [`FAQ.md`](./FAQ.md)
 
 ![FridayOS-Lite system architecture](./docs/images/architecture.png)
 
@@ -17,14 +17,14 @@
 |---|---|
 | 💻 A computer | Windows or Mac (Claudian doesn't support phones/tablets) |
 | 🌐 Internet | **No VPN needed** |
-| ⏱️ ~30 minutes | First time? Take it slow — going over is normal |
+| ⏱️ ~30 minutes | First time? Take it slow — taking longer is perfectly normal |
 | 💰 ~¥10 (≈$1.5) | Top up DeepSeek; usage is extremely cheap |
 
 ---
 
 ## 🎬 Three acts, one app per act — no context switching
 
-[`TOOLS.en.md`](./TOOLS.en.md) explains outside-in; we install inside-out — backstage first, Friday last:
+[`TOOLS.md`](./TOOLS.md) explains outside-in; we install inside-out — backstage first, Friday last:
 
 ![Install flow: three acts, seven steps, one sentence wakes Friday](./docs/images/install-flow.png)
 
@@ -95,7 +95,7 @@ Act 3 Meet Friday (never leave Obsidian): Step 5 Obsidian + Blueprint → Step 6
 3. **Top up**: find "Billing / Balance", add **¥10** — plenty to start (pay-as-you-go, very cheap).
 4. **Create a key**: left sidebar **"API keys"** → **"Create new API key"** → any name (e.g. `friday`).
 5. ⚠️ **Critical**: the `sk-xxxxxxxx...` string **shows only once!**
-   Copy it immediately into a notepad. Lost it? No panic — delete the key and create a new one.
+   Copy it immediately into a notepad. Lost it? Don't panic — delete that key and create a new one.
 
 > 🔒 This key = your account's password. **Never share it or post it online.**
 
@@ -142,7 +142,7 @@ Act 3 Meet Friday (never leave Obsidian): Step 5 Obsidian + Blueprint → Step 6
 1. Open [**obsidian.md**](https://obsidian.md) → **Download** → install.
 2. Create an **empty folder** on your computer, e.g. `My Brain`, somewhere easy to find like Documents.
 3. **Download the one file — the Friday Brain Blueprint** — into that folder:
-   - On this project's GitHub page, click **`FRIDAY-BLUEPRINT.en.md`**;
+   - On this project's GitHub page, click **`FRIDAY-BLUEPRINT.md`**;
    - Click the **download icon (Download raw file, the ⬇ arrow)** at the top-right of the file view;
    - Move the downloaded file into `My Brain`.
 4. Open Obsidian → **"Open folder as vault"** → select `My Brain`.
@@ -157,7 +157,7 @@ Act 3 Meet Friday (never leave Obsidian): Step 5 Obsidian + Blueprint → Step 6
 
 ## Step 6: Install Claudian — invite Friday into Obsidian (3 min)
 
-**Why last**: engine and chip are wired; now the AI moves into your notes app. Goodbye, terminal.
+**Why now**: the engine and chip are wired up; time to move the AI into your notes app. Goodbye, terminal.
 
 1. Obsidian → **Settings (gear icon)**.
 2. **"Community plugins"** → first time, click **"Turn on community plugins"**.
@@ -177,7 +177,7 @@ Act 3 Meet Friday (never leave Obsidian): Step 5 Obsidian + Blueprint → Step 6
 All tools in place. Time for Friday's first performance.
 
 > 📥 **Skipped the Blueprint download in Step 5? Copy-paste rescue (safest — no file-extension traps)**:
-> ① open the [**raw Blueprint page**](https://raw.githubusercontent.com/Neusoft-Intelligent-Laboratory/FridayOS-Lite/main/FRIDAY-BLUEPRINT.en.md) → **Ctrl+A, Ctrl+C**;
+> ① open the [**raw Blueprint page**](https://raw.githubusercontent.com/Neusoft-Intelligent-Laboratory/FridayOS-Lite/main/FRIDAY-BLUEPRINT.md) → **Ctrl+A, Ctrl+C**;
 > ② in Obsidian press **Ctrl+N**, name the note **FRIDAY-BLUEPRINT** → **Ctrl+V** → done.
 > (Avoid "Save link as" — browsers often save it as .txt, which Obsidian won't show.)
 
@@ -217,12 +217,12 @@ Daily/weekly plans and the inbox-cleanup command are all in Blueprint Section 7.
 | Symptom | Fix |
 |---|---|
 | `node -v` / `claude --version` does nothing | Close and **reopen** the terminal; confirm the previous step finished |
-| `npm install` errors / very slow | Network issue — retry; see [`FAQ.en.md`](./FAQ.en.md) |
+| `npm install` errors / very slow | Network issue — retry; see [`FAQ.md`](./FAQ.md) |
 | Friday doesn't reply / balance error | DeepSeek not topped up, or wrong key in cc-switch |
 | Claudian not found in search | Community plugins enabled? Obsidian ≥ 1.8.9? |
 | Friday won't build from the Blueprint | Blueprint must sit in the vault root; tell it to "re-execute Section 6 exactly" |
 
-More 👉 [`FAQ.en.md`](./FAQ.en.md)
+More 👉 [`FAQ.md`](./FAQ.md)
 
 ---
 

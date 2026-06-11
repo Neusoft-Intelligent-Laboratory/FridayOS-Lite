@@ -1,106 +1,100 @@
 <div align="center">
 
-<img src="./docs/images/hero.png" alt="FridayOS-Lite — 技术小白也能拥有的 AI 第二大脑" width="100%" />
+<img src="./docs/images/hero.png" alt="FridayOS-Lite — an AI second brain for everyone" width="100%" />
 
 # 🤖 FridayOS‑Lite
 
-### 一份文档，一句话，一个 AI 第二大脑
+### One document, one sentence, one AI second brain
 
-**不用懂技术。不用下载模板。** 装好 Obsidian + Claudian 五件套，
-下载一份《大脑蓝图》丢进文件夹，对 AI 说一句话——
-它自己把你的第二大脑 **Friday** 搭建出来。
+**No tech skills. No template to download.** Install the Obsidian + Claudian five-tool stack,
+drop one Brain Blueprint file into a folder, say one sentence —
+and the AI builds your second brain, **Friday**, by itself.
 
-简体中文 · [English](./README.en.md)
+English · [简体中文](./README.zh-CN.md)
 
-![无需翻墙](https://img.shields.io/badge/无需翻墙-✓-10B981?style=flat-square) ![无需订阅](https://img.shields.io/badge/便宜到几毛钱-DeepSeek_V4-4F46E5?style=flat-square) ![约30分钟](https://img.shields.io/badge/约30分钟装好-22D3EE?style=flat-square) ![License: MIT](https://img.shields.io/badge/License-MIT-7C3AED?style=flat-square)
+![No VPN](https://img.shields.io/badge/No_VPN-✓-10B981?style=flat-square) ![Cheap](https://img.shields.io/badge/pennies-DeepSeek_V4-4F46E5?style=flat-square) ![~30 min](https://img.shields.io/badge/~30_min_setup-22D3EE?style=flat-square) ![License: MIT](https://img.shields.io/badge/License-MIT-7C3AED?style=flat-square)
 
-<sub>由 Neusoft Intelligence Lab 打造 · 想要 AI 自主运维的完整版（自动捕获 + 机械保障）？见 <a href="https://github.com/Neusoft-Intelligent-Laboratory/FridayOS">FridayOS</a></sub>
+<sub>Built by Neusoft Intelligence Lab · Want the agent-operated full version (auto-capture + mechanical safeguards)? See <a href="https://github.com/Neusoft-Intelligent-Laboratory/FridayOS">FridayOS</a></sub>
 
 </div>
 
 ---
 
-## Lite 是什么、不是什么
+## What Lite is — and isn't
 
-**Lite 只专注一件事：教你用 Obsidian + Claudian 管好自己的知识库**——也就是 Friday 的"第二大脑"本体。学会六个脑区的分区理念，让 AI 帮你随手记、定期理、随时找。每日计划、周计划这类记录，你在 Obsidian 里手动写或在对话里让 Friday 代笔。
+**Lite focuses on one thing: teaching you to manage a knowledge base with Obsidian + Claudian** — the body of Friday's second brain. Learn the six-region partition idea, and let the AI capture, organize, and retrieve for you. Daily and weekly plans you write by hand in Obsidian, or dictate to Friday in chat.
 
-它**不做**自动化接入：没有飞书机器人、没有随时随地的消息捕获，也没有给大脑定期体检的机械保障（lint 脚本、记忆衰减、入站安全）。那些是正式版 [FridayOS](https://github.com/Neusoft-Intelligent-Laboratory/FridayOS) 的事——**AI 不只帮你记，还按一份契约自主运维整个大脑**。等你用 Lite 把分区理念用顺了，文件夹原样带过去升级即可，零迁移。
+It does **not** do automated integrations: no Feishu bot, no capture-from-anywhere messaging, and no mechanical safeguards (lint health checks, memory decay, inbound security). Those belong to the full [FridayOS](https://github.com/Neusoft-Intelligent-Laboratory/FridayOS) — where the AI doesn't just take notes for you, it **runs the whole brain under a contract**. Once the partition idea clicks, your folder moves over as-is. Zero migration.
 
-**Lite 给这样的你：**
-- 没听过 Claude、Obsidian，也不知道去哪下、怎么装
-- 一看"命令行""环境变量"就头大
-- 不想翻墙、不想付外币订阅
-- 只想要一个**能帮我记事、整理、随时问**的 AI 助理
+**Lite is for people who:**
+- Have never heard of Claude or Obsidian and don't know where to download them
+- Freeze at words like "command line" or "environment variable"
+- Don't want a VPN or a foreign-currency subscription
+- Just want an AI that remembers, organizes, and answers
 
-> 如果你能照着说明点鼠标、复制粘贴一行字，你就能装好。✅
+> If you can click a mouse and copy-paste one line, you can install it. ✅
 
-## 三句话讲清楚
+## In three lines
 
-1. **一个文件夹就是你的大脑** —— 所有笔记纯文本存在本地，永不锁定。
-2. **一个 AI 住在你的笔记软件里** —— 在 Obsidian 侧边栏和 Friday 聊天，它帮你记、帮你整理、帮你找。
-3. **大脑不用你搭** —— 下载一份 [`Friday大脑蓝图.md`](./Friday大脑蓝图.md)，对 Friday 说一句"照它搭建"，六个脑区自动建好。
+1. **A folder is your brain** — all notes as local plain text, never locked in.
+2. **An AI lives in your notes app** — chat with Friday in Obsidian's sidebar; it captures, organizes, and retrieves.
+3. **You don't build the brain** — download [`FRIDAY-BLUEPRINT.md`](./FRIDAY-BLUEPRINT.md), tell Friday "build from this", and the six regions appear by themselves.
 
-## 🗺️ 五个工具怎么搭起来
+## 🗺️ How it fits together
 
-![FridayOS-Lite 系统结构图](./docs/images/architecture.png)
+![FridayOS-Lite system architecture](./docs/images/architecture.png)
 
-> 蓝色 = 你看见、动手操作的；绿色 = 幕后帮你思考的。每个工具是什么、为什么需要，详见 [`工具说明.md`](./工具说明.md)。
+> Indigo = what you touch; teal = what thinks beneath. See [`TOOLS.md`](./TOOLS.md) for what each tool is and why.
 
-## 🚀 怎么开始（三步走）
+## 🚀 Get started (three steps)
 
-| 顺序 | 看哪篇 | 做什么 |
+| Order | Read | Do |
 |---|---|---|
-| 1️⃣ 先理解 | [`工具说明.md`](./工具说明.md) | 3 分钟搞懂五个工具分别是干嘛的 |
-| 2️⃣ 再动手 | [`安装指南.md`](./安装指南.md) | 跟着图文装好五件套，最后一句话让 Friday 搭出大脑 |
-| 3️⃣ 卡住时 | [`常见问题.md`](./常见问题.md) · [`下载清单.md`](./下载清单.md) | 排错 + 所有官方下载链接 |
+| 1️⃣ Understand | [`TOOLS.md`](./TOOLS.md) | 3 min — what the five tools are for |
+| 2️⃣ Install | [`INSTALL.md`](./INSTALL.md) | Set up the stack, then one sentence builds the brain |
+| 3️⃣ If stuck | [`FAQ.md`](./FAQ.md) | Troubleshooting + download links |
 
-> 👉 **新手就按 1→2→3 的顺序来，别跳。** 先懂再装最省心。
+> 👉 **Beginners: go 1→2→3, don't skip.** Understand first, then install.
 
-## 🧠 搭好后，你的大脑长这样
+## 🧠 Your brain after setup
 
-六个脑区，理念全部写在 [`Friday大脑蓝图.md`](./Friday大脑蓝图.md) 里：
+Six regions, fully explained in [`FRIDAY-BLUEPRINT.md`](./FRIDAY-BLUEPRINT.md):
 
-| 脑区 | 文件夹 | 一句话 |
+| Region | Folder | In a line |
 |---|---|---|
-| 📥 收件箱 | `inbox/` | 随手记——先接住，晚点整理 |
-| 🎯 工作台 | `exec/` | 正在做——手头 3〜7 件事 + 周计划/每日记录 |
-| 📚 知识库 | `wiki/` | 值得长期留的，双链互连 |
-| ⚙️ 技能区 | `skills/` | 重复的事变套路（进阶） |
-| 📦 资料库 | `raw/` | 原始资料——只读不改 |
-| 🫀 中枢 | `system/` | 大脑说明书（`CLAUDE.md`） |
+| 📥 Inbox | `inbox/` | Capture fast, sort later |
+| 🎯 Workbench | `exec/` | 3–7 things in motion + weekly/daily plans |
+| 📚 Knowledge | `wiki/` | Worth keeping, wikilinked |
+| ⚙️ Skills | `skills/` | Repeated work as routines (advanced) |
+| 📦 Archive | `raw/` | Source material, read-only |
+| 🫀 Core | `system/` | The brain's contract (`CLAUDE.md`) |
 
-## 🎮 装完别懵：先玩示例大脑
+## 🎮 Just installed and feeling lost? Play the demo brain
 
-刚搭好的大脑是空的，很难体会它强在哪。我们准备了一个**可以直接把玩的沙盘**：
+An empty brain is hard to appreciate. We ship a **ready-to-play sandbox**: [`示例大脑-云栈科技/`](./示例大脑-云栈科技/) — a fictional 100-person IT company with full employee files, projects, customers, all wikilinked across the six regions, plus 11 demo prompts in three acts that each show something a free chatbot window cannot do. Download [`示例大脑-云栈科技.zip`](./示例大脑-云栈科技.zip), unzip, open as a vault, follow the demo manual inside. *(Demo content is Chinese-only.)*
 
-**[`示例大脑-云栈科技/`](./示例大脑-云栈科技/)** —— 一家虚构的 100 人杭州 IT 公司。100 名员工档案（姓名/年龄/履历/项目/绩效/薪酬）、11 个项目、6 个客户全部双链互连，六个脑区部署完整，还埋了"薪酬倒挂""核心员工被挖"等剧情。
+![Demo brain in action](./docs/images/gif/demo-act2.gif)
 
-**怎么玩**：下载 [`示例大脑-云栈科技.zip`](./示例大脑-云栈科技.zip) → 解压 → Obsidian 打开为 vault →**在这个新 vault 里重装一遍 Claudian（插件按 vault 各管各的，半分钟）**→ 照着里面的 [`先玩这里-演示手册.md`](./示例大脑-云栈科技/先玩这里-演示手册.md) 丢 11 个提示词给 Friday（救火/经营/助理三幕，每条附"答案方向"折叠块可对照自查）。每条都演示一种**免费大模型对话框做不到的事**：多知识串联、跨档案聚合、永不过期的记忆、一句"老规矩"的默契、好答案沉淀成技能。
+## 📦 Tools you'll install (all free / very cheap)
 
-![示例大脑实录：Friday 沿双链翻档案、跑提示词](./docs/images/gif/demo-act2.gif)
-
-> 建议做一次对照实验：把同样的问题贴到免费对话框里，高下立判。😏
-
-## 📦 要装的工具（全部免费/极便宜）
-
-| 工具 | 作用 | 哪来的 |
+| Tool | Role | From |
 |---|---|---|
-| Node.js | 地基 | [nodejs.org](https://nodejs.org) |
-| Obsidian | 大脑的身体（笔记软件） | [obsidian.md](https://obsidian.md) |
-| Claude Code | Friday 的引擎（AI） | npm 国内镜像安装 |
-| cc-switch | 把引擎接到便宜芯片 | [ccswitch.io](https://ccswitch.io) |
-| DeepSeek V4 | 便宜免翻墙的模型 | [platform.deepseek.com](https://platform.deepseek.com) |
-| Claudian | 让 AI 住进 Obsidian | Obsidian 社区插件 |
+| Node.js | Foundation | [nodejs.org](https://nodejs.org) |
+| Obsidian | The brain's body (notes app) | [obsidian.md](https://obsidian.md) |
+| Claude Code | Friday's engine (the AI) | npm (China mirror) |
+| cc-switch | Wires the engine to a cheap chip | [ccswitch.io](https://ccswitch.io) |
+| DeepSeek V4 | Cheap, no-VPN model | [platform.deepseek.com](https://platform.deepseek.com) |
+| Claudian | Brings the AI into Obsidian | Obsidian community plugin |
 
-## 💬 卡住了？来群里问
+## 💬 Stuck?
 
-<!-- TODO（发布前）：上传企业微信群二维码到 docs/images/group-qr.png，并取消下行注释 -->
-<!-- ![加群二维码](./docs/images/group-qr.png) -->
+<!-- TODO (before release): upload the WeCom group QR to docs/images/group-qr.png and uncomment -->
+<!-- ![Group QR](./docs/images/group-qr.png) -->
 
-交流群二维码即将放出。也欢迎在本仓库提 [Issue](../../issues)。
+Community group QR coming soon. Bug reports and questions are welcome on the [Issues](../../issues) page.
 
 ---
 
 <div align="center">
-<sub>FridayOS‑Lite · 一份文档，一句话，一个大脑。<br/>One document, one sentence, one brain.</sub>
+<sub>FridayOS‑Lite · One document, one sentence, one brain.</sub>
 </div>

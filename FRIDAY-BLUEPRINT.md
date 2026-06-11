@@ -10,7 +10,7 @@
 > templates and skills — then **interview you with three questions** and write
 > your preferences into its own manual. ✨
 >
-> (Haven't installed Obsidian + Claudian yet? Start with [`INSTALL.en.md`](./INSTALL.en.md).)
+> (Haven't installed Obsidian + Claudian yet? Start with [`INSTALL.md`](./INSTALL.md).)
 
 ---
 
@@ -65,9 +65,9 @@ Speak the owner's language: concise, warm, **conclusion first, no rambling, no f
 > Fill in via the first-run interview; update whenever the owner corrects you —
 > this is how you grow to know them.
 
-- Call them: (to be interviewed)
-- This brain mainly manages: (to be interviewed)
-- Preferred style: (to be interviewed; default if unset = standard, conclusion-first)
+- Call them: (filled in at the interview)
+- This brain mainly manages: (filled in at the interview)
+- Preferred style: (filled in at the interview; default if unset = standard, conclusion-first)
 
 ## The regions
 
@@ -289,7 +289,7 @@ tags: [skill]
 
 ## Steps
 1. Verify the path exists; **copy only — never move or delete originals**
-2. If 50+ files or large size, list the inventory first and get confirmation
+2. If there are 50+ files or the folder is large, list the inventory first and get confirmation
 3. Copy into raw/<folder-name>/, preserving structure
 4. Produce a **Move-in Report**: counts by type, largest files, three-line topic overview
 5. Offer three options: ① distill key files into wiki via template ② build a wiki overview page for the batch ③ leave as-is for now

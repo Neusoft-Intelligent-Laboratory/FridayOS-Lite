@@ -1,6 +1,6 @@
 # 🆘 FAQ
 
-> Don't panic — most issues are here. 中文：[`常见问题.md`](./常见问题.md)
+> Don't panic — most answers are in here. 中文：[`常见问题.md`](./常见问题.md)
 
 ---
 
@@ -12,7 +12,7 @@ The full version adds automated entry points: Feishu bot capture from anywhere, 
 **Start with Lite; when you upgrade, your folder moves over as-is. Zero migration.**
 
 **Why is there no template to download?**
-You don't need one. Lite's entire "template" is one file — [`FRIDAY-BLUEPRINT.en.md`](./FRIDAY-BLUEPRINT.en.md). Drop it into an empty folder, tell Friday "build from this", and the six regions appear. The document *is* the template.
+You don't need one. Lite's entire "template" is one file — [`FRIDAY-BLUEPRINT.md`](./FRIDAY-BLUEPRINT.md). Drop it into an empty folder, tell Friday "build from this", and the six regions appear. The document *is* the template.
 
 **Do my notes get uploaded anywhere? What about privacy?**
 The note files themselves live **only on your computer** — no cloud account. To be honest though: whatever your conversation touches (your question + the note snippets Friday reads) is sent to the model provider (e.g. DeepSeek) for processing — that's how every AI assistant works. Keep truly sensitive things (passwords, ID numbers) out of Friday's reach.
@@ -21,7 +21,7 @@ The note files themselves live **only on your computer** — no cloud account. T
 
 ## Install
 
-**I can't code at all — can I really do this?** Yes. Only two steps need you to paste one line into a terminal; everything else is mouse clicks. Just follow [`INSTALL.en.md`](./INSTALL.en.md).
+**I can't code at all — can I really do this?** Yes. Only two steps need you to paste one line into a terminal; everything else is mouse clicks. Just follow [`INSTALL.md`](./INSTALL.md).
 
 **Do I need a VPN?** No. Claude Code installs from a China mirror; DeepSeek connects directly.
 
@@ -57,12 +57,12 @@ Of course — it's your brain. After setup the rules live in `system/CLAUDE.md`;
 
 **`npm install ...` is slow / spews red errors?**
 1. Usually network — **run the exact same line again**.
-2. Still failing, swap the mirror:
+2. If it still fails, swap the mirror:
    `npm install -g @anthropic-ai/claude-code --registry=https://registry.npmjs.org`
 3. Confirm Node.js is LTS (v18+).
 
 **`claude` asks me to log in / subscribe?**
-cc-switch hasn't taken over yet. Go back to [`INSTALL.en.md`](./INSTALL.en.md) **Step 4**: DeepSeek provider created, key pasted correctly, "Sync" clicked, "Apply to Claude Code Plugin" enabled.
+cc-switch hasn't taken over yet. Go back to [`INSTALL.md`](./INSTALL.md) **Step 4**: DeepSeek provider created, key pasted correctly, "Sync" clicked, "Apply to Claude Code Plugin" enabled.
 
 ---
 
@@ -97,10 +97,10 @@ Never. Your brain is the folder — **copy it**. Reinstall the apps on the new m
 
 ## Still stuck?
 
-- Note the **screenshot / error text** of the step you're stuck on.
-- Re-check every earlier step in [`INSTALL.en.md`](./INSTALL.en.md) ✅.
+- Take a **screenshot** and note the **exact error text** of the step you're stuck on.
+- Re-check every earlier step in [`INSTALL.md`](./INSTALL.md) ✅.
 - **Ask in the community group** (WeCom QR coming soon — see README) or open an Issue in this repo.
 - Official docs: DeepSeek × Claude Code 👉 https://api-docs.deepseek.com · cc-switch 👉 https://github.com/farion1231/cc-switch
 
-> Order matters: foundation (Node) → body (Obsidian + Blueprint) → chip key (DeepSeek) → engine (Claude Code) → wiring (cc-switch) → AI moves in (Claudian) → one sentence builds the brain.
+> Order matters: foundation (Node) → engine (Claude Code) → key (DeepSeek) → wiring (cc-switch) → vault (Obsidian + Blueprint) → AI moves in (Claudian) → one sentence builds the brain.
 > Whatever step fails, first confirm everything before it succeeded.
