@@ -26,6 +26,8 @@
 
 [`TOOLS.en.md`](./TOOLS.en.md) explains outside-in; we install inside-out — backstage first, Friday last:
 
+![Install flow: three acts, seven steps, one sentence wakes Friday](./docs/images/install-flow.png)
+
 ```
 Act 1 Backstage (terminal, once, never again): Step 1 Node.js → Step 2 Claude Code
 Act 2 Wire the cheap chip (key used the moment you get it): Step 3 DeepSeek key → Step 4 cc-switch
