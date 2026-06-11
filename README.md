@@ -75,6 +75,12 @@ An empty brain is hard to appreciate. We ship a **ready-to-play sandbox**: [`示
 
 ![Demo brain in action](./docs/images/gif/demo-act2.gif)
 
+## 💸 Token-frugal by design
+
+The six regions aren't just tidy — **they're what makes Friday absurdly cheap to run**. Aggregate queries scan structured frontmatter (dozens of tokens per file) instead of whole documents; every domain has an overview map (MOC) so Friday starts from one page, not eleven; questions open only the region they belong to; and routines live in `skills/` once, invoked by name instead of re-explained every time.
+
+Measured on DeepSeek V4 over a 169-note vault: brain build **¥0.10**, a complex multi-file analysis **≈¥0.02 per question**, 11 of them back-to-back **¥0.26 total**. A real 10-person team ran this architecture for a full week — the heaviest user spent under **¥20**.
+
 ## 📦 Tools you'll install (all free / very cheap)
 
 | Tool | Role | From |
@@ -97,4 +103,4 @@ Community group QR coming soon. Bug reports and questions are welcome on the [Is
 
 <div align="center">
 <sub>FridayOS‑Lite · One document, one sentence, one brain.</sub>
-</div>
+<
