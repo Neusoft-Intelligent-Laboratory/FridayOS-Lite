@@ -41,6 +41,9 @@ The note files themselves live **only on your computer** — no cloud account. T
 **The build is missing pieces (no templates / skills / interview)?**
 Usually means it ran in a **non-empty folder**. Either tell it "re-execute Section 6 steps 1-11 one by one, skip nothing", or — most reliable — start over in a fresh empty folder (30 seconds).
 
+**Downloaded Blueprint invisible in Obsidian / saved as .txt?**
+Browsers often save raw pages as `.txt`, and Obsidian only shows `.md` (Windows hides extensions, so you can't even tell). **Skip renaming — use copy-paste**: open the raw page → Ctrl+A, Ctrl+C → in Obsidian Ctrl+N, name it, Ctrl+V.
+
 **Can I edit the Blueprint / contract?**
 Of course — it's your brain. After setup the rules live in `system/CLAUDE.md`; edit them in plain language (e.g. "be more brief"). Friday follows the new rules from its next task.
 

@@ -176,7 +176,10 @@ Act 3 Meet Friday (never leave Obsidian): Step 5 Obsidian + Blueprint → Step 6
 
 All tools in place. Time for Friday's first performance.
 
-> 📥 **Skipped the Blueprint download in Step 5?** Right-click [**here**](https://raw.githubusercontent.com/Neusoft-Intelligent-Laboratory/FridayOS-Lite/main/FRIDAY-BLUEPRINT.en.md) → "**Save link as**" — it lands in your Downloads; drag it into your brain folder and it appears in Obsidian instantly.
+> 📥 **Skipped the Blueprint download in Step 5? Copy-paste rescue (safest — no file-extension traps)**:
+> ① open the [**raw Blueprint page**](https://raw.githubusercontent.com/Neusoft-Intelligent-Laboratory/FridayOS-Lite/main/FRIDAY-BLUEPRINT.en.md) → **Ctrl+A, Ctrl+C**;
+> ② in Obsidian press **Ctrl+N**, name the note **FRIDAY-BLUEPRINT** → **Ctrl+V** → done.
+> (Avoid "Save link as" — browsers often save it as .txt, which Obsidian won't show.)
 
 In the Claudian chat, say:
 
