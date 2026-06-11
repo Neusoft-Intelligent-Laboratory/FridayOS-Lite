@@ -73,6 +73,8 @@ Six regions, fully explained in [`FRIDAY-BLUEPRINT.en.md`](./FRIDAY-BLUEPRINT.en
 
 An empty brain is hard to appreciate. We ship a **ready-to-play sandbox**: [`示例大脑-云栈科技/`](./示例大脑-云栈科技/) — a fictional 100-person IT company with full employee files, projects, customers, all wikilinked across the six regions, plus 11 demo prompts in three acts that each show something a free chatbot window cannot do. Download [`示例大脑-云栈科技.zip`](./示例大脑-云栈科技.zip), unzip, open as a vault, follow the demo manual inside. *(Demo content is Chinese-only.)*
 
+![Demo brain in action](./docs/images/gif/demo-act2.gif)
+
 ## 📦 Tools you'll install (all free / very cheap)
 
 | Tool | Role | From |

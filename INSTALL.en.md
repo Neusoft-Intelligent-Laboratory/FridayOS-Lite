@@ -50,7 +50,7 @@ Step 0 Node.js (foundation) → Step 1 Obsidian + empty folder + Blueprint (body
      ```
    - A version number (like `v20.11.0`) means success ✅.
 
-> 📸 *(screenshot: Node.js LTS download button)*
+![Step 0: install Node.js](./docs/images/gif/step0-node.gif)
 
 ---
 
@@ -69,8 +69,8 @@ Step 0 Node.js (foundation) → Step 1 Obsidian + empty folder + Blueprint (body
 
 > Right now your brain is just a drawing — no building yet. **Don't create any folders by hand.**
 > In Step 6, Friday will construct everything from the drawing itself.
->
-> 📸 *(screenshot: GitHub ⬇ download button + Obsidian "Open folder as vault")*
+
+![Step 1: install Obsidian and open the folder as a vault](./docs/images/gif/step1-obsidian.gif)
 
 ---
 
@@ -86,8 +86,8 @@ Step 0 Node.js (foundation) → Step 1 Obsidian + empty folder + Blueprint (body
    Copy it immediately into a notepad. Lost it? No panic — delete the key and create a new one.
 
 > 🔒 This key = your account's password. **Never share it or post it online.**
->
-> 📸 *(screenshot: DeepSeek create-key dialog + billing page)*
+
+![Step 2: create a DeepSeek API key](./docs/images/gif/step2-deepseek-key.gif)
 
 **Note these two values for Step 4:**
 - Base URL (Anthropic-compatible): `https://api.deepseek.com/anthropic`
@@ -117,8 +117,8 @@ Step 0 Node.js (foundation) → Step 1 Obsidian + empty folder + Blueprint (body
 
 > 💡 Don't run `claude` to log in yet — by default it connects to the paid official models.
 > Next step, cc-switch points it at DeepSeek instead; no login ever needed.
->
-> 📸 *(screenshot: `claude --version` showing a version number)*
+
+![Step 3: install Claude Code and verify](./docs/images/gif/step3-claude-code.gif)
 
 ---
 
@@ -141,8 +141,10 @@ Step 0 Node.js (foundation) → Step 1 Obsidian + empty folder + Blueprint (body
 6. Back on the main screen, **select the DeepSeek provider** → **"Sync to All Apps"**.
 
 > 🎉 The engine now runs on DeepSeek! (Switching to Kimi, GLM, etc. later is one click here.)
->
-> 📸 *(screenshot: cc-switch DeepSeek provider form + the two Settings toggles)*
+
+![Step 4a: install cc-switch](./docs/images/gif/step4-ccswitch-install.gif)
+
+![Step 4b: configure the DeepSeek provider and sync](./docs/images/gif/step4-ccswitch-config.gif)
 
 ---
 
@@ -158,8 +160,8 @@ Step 0 Node.js (foundation) → Step 1 Obsidian + empty folder + Blueprint (body
 5. Close settings. A **Claudian icon** appears in the sidebar — that's your chat with Friday.
 
 > ⚠️ Requires Obsidian ≥ 1.8.9 (fresh installs qualify). Desktop only.
->
-> 📸 *(screenshot: plugin search for Claudian + the sidebar chat)*
+
+![Step 5: install and enable Claudian](./docs/images/gif/step5-claudian.gif)
 
 ---
 
@@ -184,8 +186,8 @@ Daily/weekly plans and the inbox-cleanup command are all in Blueprint Section 7.
 - "Clean up my inbox."
 
 > 💡 If Friday doesn't act or builds it wrong: tell it "delete what you just made and re-execute Blueprint Section 6 exactly", or use the Blueprint's manual fallback — six folders by hand, two minutes.
->
-> 📸 *(screenshot: Friday reporting the build + six folders in the sidebar)*
+
+![Step 6: Friday builds the brain from the Blueprint](./docs/images/gif/step6-blueprint-build.gif)
 
 ---
 
