@@ -35,7 +35,7 @@ The note files themselves live **only on your computer** — no cloud account. T
 
 **I said "build from the Blueprint" but Friday didn't act / built it wrong?**
 1. Confirm the Blueprint file sits in the vault **root** (not a subfolder).
-2. Tell it: "**Re-execute Blueprint Section 4 exactly.**"
+2. Tell it: "**Re-execute Blueprint Section 6 exactly.**"
 3. Still stuck? Use the Blueprint's manual fallback — six folders by hand plus one copy-paste, two minutes.
 
 **Can I edit the Blueprint / contract?**

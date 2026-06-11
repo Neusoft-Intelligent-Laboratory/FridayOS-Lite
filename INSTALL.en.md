@@ -169,7 +169,7 @@ All tools in place. Time for Friday's first performance. In the Claudian chat, s
 
 > **Read the Friday Brain Blueprint and build my brain according to it.**
 
-Friday follows the blueprint on its own: creates the six regions `inbox / exec / wiki / skills / raw / system`, writes `system/CLAUDE.md` (its behavior contract), and archives the blueprint. **You don't create a single folder.**
+Friday follows the blueprint on its own: creates the six regions, writes its behavior contract (`system/CLAUDE.md`), installs three filing templates and two starter skills (inbox cleanup, weekly review), sets up your weekly plan and decision log — then **interviews you with three questions** (what to call you, what this brain manages, your preferred style) and writes your answers into its own contract. **You don't create a single folder, and by the end it already knows you.**
 
 Then try:
 
@@ -179,11 +179,11 @@ If it creates the note in `inbox/` by itself —
 
 🎉 **Congratulations, your AI second brain is live!**
 
-Daily/weekly plans and the inbox-cleanup command are all in Blueprint Section 5. Also try:
+Daily/weekly plans and the inbox-cleanup command are all in Blueprint Section 7. Also try:
 - "Put my three goals for this week into exec."
 - "Clean up my inbox."
 
-> 💡 If Friday doesn't act or builds it wrong: tell it "delete what you just made and re-execute Blueprint Section 4 exactly", or use the Blueprint's manual fallback — six folders by hand, two minutes.
+> 💡 If Friday doesn't act or builds it wrong: tell it "delete what you just made and re-execute Blueprint Section 6 exactly", or use the Blueprint's manual fallback — six folders by hand, two minutes.
 >
 > 📸 *(screenshot: Friday reporting the build + six folders in the sidebar)*
 
@@ -197,7 +197,7 @@ Daily/weekly plans and the inbox-cleanup command are all in Blueprint Section 5.
 | `npm install` errors / very slow | Network issue — retry; see [`FAQ.en.md`](./FAQ.en.md) |
 | Friday doesn't reply / balance error | DeepSeek not topped up, or wrong key in cc-switch |
 | Claudian not found in search | Community plugins enabled? Obsidian ≥ 1.8.9? |
-| Friday won't build from the Blueprint | Blueprint must sit in the vault root; tell it to "re-execute Section 4 exactly" |
+| Friday won't build from the Blueprint | Blueprint must sit in the vault root; tell it to "re-execute Section 6 exactly" |
 
 More 👉 [`FAQ.en.md`](./FAQ.en.md)
 
