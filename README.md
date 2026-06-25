@@ -98,6 +98,16 @@ Measured on DeepSeek V4 over a 169-note vault: brain build **¥0.10**, a complex
 | DeepSeek V4 | Cheap, no-VPN model | [platform.deepseek.com](https://platform.deepseek.com) |
 | Claudian | Brings the AI into Obsidian | Obsidian community plugin |
 
+## Star History
+
+<a href="https://www.star-history.com/?repos=Neusoft-Intelligent-Laboratory%2FFridayOS-Lite&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Neusoft-Intelligent-Laboratory/FridayOS-Lite&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Neusoft-Intelligent-Laboratory/FridayOS-Lite&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Neusoft-Intelligent-Laboratory/FridayOS-Lite&type=date&legend=top-left" />
+ </picture>
+</a>
+
 ## 💬 Stuck?
 
 <!-- TODO (before release): upload the WeCom group QR to docs/images/group-qr.png and uncomment -->
