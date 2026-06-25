@@ -16,17 +16,6 @@ English · [简体中文](./README.zh-CN.md)
 
 <sub>Built by Neusoft Intelligence Lab · Want the agent-operated full version (auto-capture + mechanical safeguards)? See <a href="https://github.com/Neusoft-Intelligent-Laboratory/FridayOS">FridayOS</a></sub>
 
-<br />
-<br />
-
-<a href="https://www.star-history.com/?repos=Neusoft-Intelligent-Laboratory%2FFridayOS-Lite&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Neusoft-Intelligent-Laboratory/FridayOS-Lite&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Neusoft-Intelligent-Laboratory/FridayOS-Lite&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Neusoft-Intelligent-Laboratory/FridayOS-Lite&type=date&legend=top-left" />
- </picture>
-</a>
-
 </div>
 
 ---
