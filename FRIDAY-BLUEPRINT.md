@@ -22,7 +22,7 @@ Three principles:
 
 1. **One folder is one brain.** Plain `.md` text, no database, no lock-in. Copy the folder, move your whole brain.
 2. **Notes flow; they don't pile up.** Knowledge has a lifecycle: captures (`inbox`) → in motion (`exec`) → worth keeping (`wiki`) → repeated work becomes routine (`skills`). What doesn't flow gets deleted. **The partitions also save money**: Friday reads per-region and scans frontmatter instead of whole files — a measured multi-file analysis over 100+ records costs ≈¥0.02.
-3. **You think, Friday remembers.** Say something in passing — it files it. Ask a question — it searches your brain first.
+3. **You think, Friday remembers.** Say something in passing — it files it. Ask a question — it searches your brain first. This way of working has a name: **Vibe Knowledge Management** — driving a knowledge base with natural language.
 
 ## 2. The six regions
 

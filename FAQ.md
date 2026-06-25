@@ -6,6 +6,9 @@
 
 ## Positioning
 
+**What is "Vibe Knowledge Management"?**
+The core idea behind Friday: **drive your knowledge base with natural language and let the AI manage it** — like vibe coding, but for knowledge. You talk; Friday files, links, and retrieves. It's a new way of working, and how well it replicates for every user is still being verified — by users like you.
+
 **Lite vs. full FridayOS — which one?**
 Lite does one thing: a knowledge base managed with Obsidian + Claudian (the six-region idea). Daily/weekly plans you write by hand or dictate in chat.
 The full version adds automated entry points: Feishu bot capture from anywhere, a `domains/` project workbench, personality adaptation.

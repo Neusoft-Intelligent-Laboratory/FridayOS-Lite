@@ -43,6 +43,8 @@ A free desktop GUI. To make Claude Code use DeepSeek instead of Anthropic you'd 
 ## In one sentence
 > **Obsidian** is the body, **Claudian** brings the AI inside it, **Claude Code** is the engine, and **cc-switch** wires that engine to **DeepSeek V4** — a chip that's both cheap and VPN‑free. Together they are **Friday**.
 
+What the five tools add up to is **Vibe Knowledge Management**: you speak plain language; Friday manages the knowledge base.
+
 **Lite's boundary**: these five tools plus one [`FRIDAY-BLUEPRINT.md`](./FRIDAY-BLUEPRINT.md) give you a knowledge base managed inside Obsidian — that's all of Lite. Automated entry points (Feishu chat capture, feed-your-brain-from-anywhere) belong to the full [FridayOS](https://github.com/Neusoft-Intelligent-Laboratory/FridayOS); your folder upgrades over as-is.
 
 Next 👉 follow [`INSTALL.md`](./INSTALL.md) step by step.

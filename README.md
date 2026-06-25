@@ -40,6 +40,12 @@ It does **not** do automated integrations: no Feishu bot, no capture-from-anywhe
 2. **An AI lives in your notes app** — chat with Friday in Obsidian's sidebar; it captures, organizes, and retrieves.
 3. **You don't build the brain** — download [`FRIDAY-BLUEPRINT.md`](./FRIDAY-BLUEPRINT.md), tell Friday "build from this", and the six regions appear by themselves.
 
+## 💡 This way of working has a name: Vibe Knowledge Management
+
+You've heard of vibe coding — say what you want, the AI writes the code. **Vibe Knowledge Management (VKM)** is the same move applied to knowledge: **drive your knowledge base with natural language, and let the AI do the managing.** You never create folders, tag notes, or fix links by hand. You just talk — capture a stray thought, ask a question, say "the usual" — and filing, linking, and retrieval are Friday's job.
+
+VKM is the core of Friday, and Lite is its smallest complete form. Fair notice: this is a new way of working — how well it replicates beyond us, and how quickly newcomers internalize it, still needs more users to verify. **That's exactly what this repo is for.**
+
 ## 🗺️ How it fits together
 
 ![FridayOS-Lite — five tools, one signal chain](./docs/images/tools-flow.gif)
@@ -71,7 +77,7 @@ Six regions, fully explained in [`FRIDAY-BLUEPRINT.md`](./FRIDAY-BLUEPRINT.md):
 
 ## 🎮 Just installed and feeling lost? Play the demo brain
 
-An empty brain is hard to appreciate. We ship a **ready-to-play sandbox**: [`示例大脑-云栈科技/`](./示例大脑-云栈科技/) — a fictional 100-person IT company with full employee files, projects, customers, all wikilinked across the six regions, plus 11 demo prompts in three acts that each show something a free chatbot window cannot do. Download [`示例大脑-云栈科技.zip`](./示例大脑-云栈科技.zip), unzip, open as a vault, follow the demo manual inside. *(Demo content is Chinese-only.)*
+An empty brain is hard to appreciate. We ship a **ready-to-play sandbox** — a fictional 100-person IT company with full employee files, projects, customers, all wikilinked across the six regions, plus 11 demo prompts in three acts that each show something a free chatbot window cannot do. To play: download [`示例大脑-云栈科技.zip`](./示例大脑-云栈科技.zip) (click the ⬇ download button), unzip, open as a vault, follow the demo manual inside. *(Demo content is Chinese-only.)*
 
 ![Demo brain in action](./docs/images/gif/demo-act2.gif)
 

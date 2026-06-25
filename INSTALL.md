@@ -195,6 +195,8 @@ If it creates the note in `inbox/` by itself —
 
 🎉 **Congratulations, your AI second brain is live!**
 
+> 💡 What you just did — one plain-language sentence, and the AI built (and will now manage) your knowledge base — is called **Vibe Knowledge Management**. Everything from here on works the same way: you talk, Friday manages.
+
 > ⚠️ Note: any **new vault** (e.g. the demo brain after unzipping) starts with **no plugins** — Obsidian plugins are per-vault. Repeat **Step 6 (install Claudian)** inside it; takes 30 seconds since it's already downloaded.
 
 Daily/weekly plans and the inbox-cleanup command are all in Blueprint Section 7. Also try:
