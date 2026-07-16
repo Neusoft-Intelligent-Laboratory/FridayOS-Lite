@@ -101,12 +101,10 @@ Measured on DeepSeek V4 over a 169-note vault: brain build **¥0.10**, a complex
 ## Star History
 
 <a href="https://www.star-history.com/?repos=Neusoft-Intelligent-Laboratory%2FFridayOS-Lite&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Neusoft-Intelligent-Laboratory/FridayOS-Lite&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Neusoft-Intelligent-Laboratory/FridayOS-Lite&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Neusoft-Intelligent-Laboratory/FridayOS-Lite&type=date&legend=top-left" />
- </picture>
+  <img alt="FridayOS-Lite Star History Chart" src="./docs/images/star-history.svg" width="100%" />
 </a>
+
+<sub>Updated daily by GitHub Actions. Click the chart for the interactive view.</sub>
 
 ## 💬 Stuck?
 
