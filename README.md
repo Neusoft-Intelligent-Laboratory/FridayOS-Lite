@@ -104,7 +104,7 @@ Measured on DeepSeek V4 over a 169-note vault: brain build **¥0.10**, a complex
   <img alt="FridayOS-Lite Star History Chart" src="./docs/images/star-history.svg" width="100%" />
 </a>
 
-<sub>Updated daily by GitHub Actions. Click the chart for the interactive view.</sub>
+<sub>Static snapshot. Click the chart for the live interactive view.</sub>
 
 ## 💬 Stuck?
 
