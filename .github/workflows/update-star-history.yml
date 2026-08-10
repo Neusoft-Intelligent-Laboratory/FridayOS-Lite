@@ -1,0 +1,34 @@
+name: Update Star History
+
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-star-history
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate chart
+        env:
+          # Required Actions secret: a fine-grained PAT owned by a repository
+          # admin, limited to this repository and read-only Metadata access.
+          # The short-lived github.token remains responsible for the git push.
+          STAR_HISTORY_TOKEN: ${{ secrets.STAR_HISTORY_TOKEN }}
+        run: python .github/scripts/update_star_history.py
+      - name: Commit changed chart
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/images/star-history.svg
+          git diff --cached --quiet || git commit -m "chore: update star history [skip ci]"
+          git push
