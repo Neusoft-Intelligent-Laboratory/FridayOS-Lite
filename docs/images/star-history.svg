@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
 <title id="title">FridayOS-Lite Star History</title>
-<desc id="desc">696 GitHub stars from 2026-06-12 to 2026-08-10</desc>
+<desc id="desc">3 observed star-count snapshots from 2026-07-16 to 2026-08-11; current count 648</desc>
 <style>
   .bg { fill: #ffffff; } .grid { stroke: #e5e7eb; stroke-width: 1; }
   .label { fill: #6b7280; font: 13px system-ui, sans-serif; }
   .title { fill: #111827; font: 600 20px system-ui, sans-serif; }
-  .area { fill: #6366f1; opacity: .12; } .line { fill: none; stroke: #4f46e5; stroke-width: 3; }
-  @media (prefers-color-scheme: dark) { .bg { fill: #0d1117; } .grid { stroke: #30363d; } .label { fill: #8b949e; } .title { fill: #f0f6fc; } .area { fill: #818cf8; } .line { stroke: #818cf8; } }
+  .area { fill: #6366f1; opacity: .12; } .line { fill: none; stroke: #4f46e5; stroke-width: 3; } .point { fill: #4f46e5; }
+  @media (prefers-color-scheme: dark) { .bg { fill: #0d1117; } .grid { stroke: #30363d; } .label { fill: #8b949e; } .title { fill: #f0f6fc; } .area { fill: #818cf8; } .line { stroke: #818cf8; } .point { fill: #818cf8; } }
 </style>
 <rect class="bg" width="100%" height="100%" rx="10"/>
-<text x="70" y="25" class="title">Star History · 696 stars</text>
+<text x="70" y="25" class="title">Star History · 648 stars</text>
 <line x1="70" y1="365.0" x2="875" y2="365.0" class="grid"/><text x="58" y="370.0" text-anchor="end" class="label">0</text><line x1="70" y1="282.5" x2="875" y2="282.5" class="grid"/><text x="58" y="287.5" text-anchor="end" class="label">174</text><line x1="70" y1="200.0" x2="875" y2="200.0" class="grid"/><text x="58" y="205.0" text-anchor="end" class="label">348</text><line x1="70" y1="117.5" x2="875" y2="117.5" class="grid"/><text x="58" y="122.5" text-anchor="end" class="label">522</text><line x1="70" y1="35.0" x2="875" y2="35.0" class="grid"/><text x="58" y="40.0" text-anchor="end" class="label">696</text>
-<polygon points="70,365 70.0,365.0 70.0,364.1 83.6,360.3 97.3,359.3 110.9,354.6 124.6,344.1 138.2,335.1 151.9,330.4 165.5,325.2 179.2,320.4 192.8,311.4 206.4,304.3 220.1,298.1 233.7,288.7 247.4,276.8 261.0,272.1 274.7,265.4 288.3,259.7 301.9,255.0 315.6,252.2 329.2,247.9 342.9,241.7 356.5,236.5 370.2,231.8 383.8,226.6 397.5,219.0 411.1,212.3 424.7,207.1 438.4,203.3 452.0,197.6 465.7,191.9 479.3,186.2 493.0,181.5 506.6,174.9 520.3,170.1 533.9,165.4 547.5,161.6 561.2,159.2 574.8,153.5 588.5,147.4 602.1,144.1 615.8,139.8 629.4,135.5 643.1,128.4 656.7,118.9 670.3,114.7 684.0,109.0 697.6,105.6 711.3,100.4 724.9,93.8 738.6,87.2 752.2,81.0 765.8,77.2 779.5,70.6 793.1,64.9 806.8,60.1 820.4,55.9 834.1,47.8 847.7,43.5 861.4,37.4 875.0,35.0 875,365" class="area"/><polyline points="70.0,365.0 70.0,364.1 83.6,360.3 97.3,359.3 110.9,354.6 124.6,344.1 138.2,335.1 151.9,330.4 165.5,325.2 179.2,320.4 192.8,311.4 206.4,304.3 220.1,298.1 233.7,288.7 247.4,276.8 261.0,272.1 274.7,265.4 288.3,259.7 301.9,255.0 315.6,252.2 329.2,247.9 342.9,241.7 356.5,236.5 370.2,231.8 383.8,226.6 397.5,219.0 411.1,212.3 424.7,207.1 438.4,203.3 452.0,197.6 465.7,191.9 479.3,186.2 493.0,181.5 506.6,174.9 520.3,170.1 533.9,165.4 547.5,161.6 561.2,159.2 574.8,153.5 588.5,147.4 602.1,144.1 615.8,139.8 629.4,135.5 643.1,128.4 656.7,118.9 670.3,114.7 684.0,109.0 697.6,105.6 711.3,100.4 724.9,93.8 738.6,87.2 752.2,81.0 765.8,77.2 779.5,70.6 793.1,64.9 806.8,60.1 820.4,55.9 834.1,47.8 847.7,43.5 861.4,37.4 875.0,35.0" class="line"/>
-<text x="70" y="402" class="label">2026-06-12</text>
-<text x="875" y="402" text-anchor="end" class="label">2026-08-10</text>
+<polygon points="70,365 70.0,167.3 844.0,35.0 875.0,57.8 875,365" class="area"/><polyline points="70.0,167.3 844.0,35.0 875.0,57.8" class="line"/><circle cx="70.0" cy="167.3" r="4" class="point"/><circle cx="844.0" cy="35.0" r="4" class="point"/><circle cx="875.0" cy="57.8" r="4" class="point"/>
+<text x="70" y="402" class="label">2026-07-16</text>
+<text x="875" y="402" text-anchor="end" class="label">2026-08-11</text>
 </svg>
